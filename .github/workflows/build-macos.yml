@@ -26,7 +26,7 @@ jobs:
 
     - name: Build the MacOS Executable
       run: |
-        pyinstaller --onefile --windowed --osx-bundle-identifier=com.seuapp.estoque --distpath=dist/estoque --workpath=build/estoque --specpath=spec/ estoque.py
+        pyinstaller --onefile --windowed --osx-bundle-identifier=com.seuapp.estoque --icon=app_icon.icns estoque.py
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
