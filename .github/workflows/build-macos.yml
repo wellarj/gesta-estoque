@@ -24,9 +24,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install pyinstaller
 
-    - name: Build the MacOS Executable for x86_64
+    - name: Build the MacOS Executable (Universal)
       run: |
-        pyinstaller --onefile --windowed --osx-bundle-identifier=com.seuapp.estoque --target-arch x86_64 estoque.py
+        pyinstaller --onefile --windowed --osx-bundle-identifier=com.seuapp.estoque --target-arch x86_64 --target-arch arm64 estoque.py
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
