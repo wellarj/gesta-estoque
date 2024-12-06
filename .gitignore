@@ -1,0 +1,34 @@
+# Ignorar arquivos do banco de dados SQLite
+*.db
+*.sqlite3
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos temporários
+*.tmp
+*.bak
+*.swp
+
+# Ignorar diretórios criados por PyInstaller
+/dist/
+/build/
+/*.spec
+
+# Ignorar caches do Python
+__pycache__/
+*.py[cod]
+
+# Ignorar arquivos de ambiente virtual
+venv/
+env/
+.venv/
+.env/
+
+# Ignorar configurações locais
+.env
+*.env.local
+
+# Ignorar arquivos do sistema operacional
+.DS_Store
+Thumbs.db
